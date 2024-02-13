@@ -1,0 +1,48 @@
+.products {
+  .container {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    text-align: start;
+    margin-bottom: 100px;
+  }
+
+  &__info {
+    text-align: start;   
+  }
+
+  &__img {
+    border-radius: 8px;
+  }
+
+  &__title {
+    font-size: "Keshiki";
+    color: black;
+    opacity: 0.6;
+    font-size: 18px;
+    margin-left: -190px;
+    margin-bottom: 20px;
+  }
+
+  &__heading {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 48px;
+    margin-left: -200px;
+  }
+
+  &__comment {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    opacity: 0.8;
+    line-height: 40px;
+    margin-left: -200px;
+  }
+
+  &__button {
+    width: 300px;
+    margin-left: -200px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+}

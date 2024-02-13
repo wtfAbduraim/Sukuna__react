@@ -1,0 +1,90 @@
+.plans {
+  .container {
+    margin-bottom: 100px;
+  }
+
+  &__heading {
+    color: red;
+    margin-bottom: 20px;
+  }
+
+  &__heading_2 {
+    color: midnightblue;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    width: 500px;
+    text-align: start;
+    font-size: 30px;
+    font-family: "Keshiki";
+    padding: 10px 10px;
+  }
+
+  &__img {
+    border-radius: 8px;
+  }
+
+  &__2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    width: 500px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.568);
+    font-family: "Poppins", sans-serif;
+    line-height: 30px;
+  }
+
+  &__span {
+    font-size: 18px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    opacity: 1;
+  }
+}
+
+.circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: turquoise;
+  animation: move-the-circle 1s infinite;
+  transform-origin: center center;
+  margin-left: 500px;
+}
+
+@for $num from 1 through 8 {
+  .circle:nth-child(#{$num}) {
+    left: ($num - 1) * 30px;
+    animation-delay: $num * 0.1s;
+  }
+}
+
+@keyframes move-the-circle {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    background-color: red;
+  }
+  50% {
+    transform: translate(0, 50px) scale(0.4);
+    opacity: 0.5;
+    background-color: blue;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    background-color: red;
+  }
+}
